@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mansoor Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">
+            <span class="logo-part mansoor">Mansoor</span>
+            <span class="logo-part khan">Khan</span>
+        </div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#resume">Resume</a></li>
+            </ul>
+        </div>
+        <div class="button-container">
+            <a href="#contact" class="contact-button">
+                Contact 
+                <img src="assets/conatct aroow.png" alt="Arrow Icon" class="arrow-icon">
+              </a>
+          </div>
+    </nav>
+    
+    <nav id="hamburger-nav">
+        <div class="logo">
+            <span class="logo-part mansoor">Mansoor</span>
+            <span class="logo-part khan">Khan</span>
+        </div>
+        <!-- <div class="button-container">
+            <a href="#contact" class="contact-button">
+                Contact 
+                <img src="assets/conatct aroow.png" alt="Arrow Icon" class="arrow-icon">
+              </a>
+        </div> -->
+    <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div>
+            <ul class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#resume" onclick="toggleMenu()">Resume</a></li>
+            </ul>
+        </div>
+    </div> 
+    </nav>
+
+
+<section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/profile.png" alt="profile ppicture">
+        </div>
+        <div class="section__text">
+            <p class="section__text_p1">Hello, I'm</p>
+            <h1 class="title">Mansoor Khan</h1>
+            <p class="section__text_p2">Technical Artist</p>
+            <div class="btn-container">
+              <button 
+              class="btn btn-color-2"
+              onclick="window.open('https://www.linkedin.com/in/mansoor-khan-a1b4101b9/')">LinkedIn</button>
+              <button 
+              class="btn btn-color-1"
+              onclick="window.open('./assets/Mansoor Khan Resume.pdf')">Resume</button>
+            </div>
+        </div>
+</section>
+
+<section id="ham-profile" class="profile">
+        <div class="ham-profile__image-container">
+          <img src="./assets/profile.png" alt="profile picture">
+        </div>
+        <div class="ham-profile__text-container">
+          <p class="profile__text-p1">Hello, I'm</p>
+          <h1 class="profile__title">Mansoor Khan</h1>
+          <p class="profile__text-p2">Technical Artist</p>
+          <div class="ham-btn-container">
+            <button class="btn ham-btn-color-2" onclick="window.open('./assets/Mansoor Khan Resume.pdf')">Resume</button>
+            <button class="btn ham-btn-color-1" id="#contact">Contact</button>
+          </div>
+        </div>
+</section>
+
+    <section id="skills">
+        <div class="skills-container">
+            <div class="skills-marquee">
+            <img src="assets/skills (3).png" alt="Unreal Engine" class="skill-icon">
+            <img src="assets/skills (7).png" alt="Houdini" class="skill-icon">
+            <img src="assets/skills (8).png" alt="Blender" class="skill-icon">
+            <img src="assets/skills (2).png" alt="Substance Designer" class="skill-icon">
+            <img src="assets/skills (4).png" alt="Photoshop" class="skill-icon">
+            <img src="assets/skills (6).png" alt="VS Code" class="skill-icon">
+            <img src="assets/skills (1).png" alt="Python" class="skill-icon">
+            <img src="assets/skills (5).png" alt="C++" class="skill-icon">
+            <!-- loop -->
+            <img src="assets/skills (3).png" alt="Unreal Engine" class="skill-icon">
+            <img src="assets/skills (7).png" alt="Houdini" class="skill-icon">
+            <img src="assets/skills (8).png" alt="Blender" class="skill-icon">
+            <img src="assets/skills (2).png" alt="Substance Designer" class="skill-icon">
+            <img src="assets/skills (4).png" alt="Photoshop" class="skill-icon">
+            <img src="assets/skills (6).png" alt="VS Code" class="skill-icon">
+            <img src="assets/skills (1).png" alt="Python" class="skill-icon">
+            <img src="assets/skills (5).png" alt="C++" class="skill-icon">
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="aboutme">
+            <h1>About Me</h1>
+            <p>Technical Artist with four years of experience in both freelance and full-time roles. I have a knack for automation and specialize in creating geometry, materials, and textures using procedural techniques. Experienced in AR/VR projects, I am passionate about leveraging synthetic data and deep tech for innovative problem-solving in creative projects.</p>
+        </div>
+    </section>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
