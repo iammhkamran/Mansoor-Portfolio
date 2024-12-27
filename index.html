@@ -17,7 +17,7 @@
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="#resume">Resume</a></li>
+                <li><a onclick="window.open('./assets/Mansoor Khan Resume.pdf')"href="#resume">Resume</a></li>
             </ul>
         </div>
         <div class="button-container">
@@ -49,7 +49,7 @@
             <ul class="menu-links">
                 <li><a href="#about" onclick="toggleMenu()">About</a></li>
                 <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-                <li><a href="#resume" onclick="toggleMenu()">Resume</a></li>
+                <li><a onclick="window.open('./assets/Mansoor Khan Resume.pdf')" onclick="toggleMenu()">Resume</a></li>
             </ul>
         </div>
     </div> 
@@ -85,7 +85,7 @@
           <p class="profile__text-p2">Technical Artist</p>
           <div class="ham-btn-container">
             <button class="btn ham-btn-color-2" onclick="window.open('./assets/Mansoor Khan Resume.pdf')">Resume</button>
-            <button class="btn ham-btn-color-1" id="#contact">Contact</button>
+            <button class="btn ham-btn-color-1" href="#contact">Contact</button>
           </div>
         </div>
 </section>
@@ -120,8 +120,30 @@
             <p>Technical Artist with four years of experience in both freelance and full-time roles. I have a knack for automation and specialize in creating geometry, materials, and textures using procedural techniques. Experienced in AR/VR projects, I am passionate about leveraging synthetic data and deep tech for innovative problem-solving in creative projects.</p>
         </div>
     </section>
-    
 
+    <section id="contact">
+        <div class="contact-text-section">
+            <h1>Let's <span>Work</span> Together</h1>
+            <p>I specialize in procedural design and AR/VR innovation. Let's create something extraordinary together.</p>
+        </div>
+        <div class="contact-form-section">
+            <input type="text" placeholder="Name">
+            <input type="email" placeholder="Email">
+            <button type="submit">Submit</button>
+        </div>
+    </section>
+
+    <section id="ham-contact">
+        <div class="ham-contact-text-section">
+            <h1>Let's <span>Work</span> Together</h1>
+            <p>I specialize in procedural design and AR/VR innovation. Let's create something extraordinary together.</p>
+        </div>
+        <div class="ham-contact-form-section">
+            <input type="text" placeholder="Name">
+            <input type="email" placeholder="Email">
+            <button type="submit">Submit</button>
+        </div>
+    </section>
     <script src="script.js"></script>
 </body>
 </html>

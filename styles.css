@@ -375,7 +375,6 @@ a:hover{
   background: none;
   color: #FF5733;
   border: #FF5733 1px solid;
-  padding: 20px 40px;
 }
 
 .ham-btn-color-2{
@@ -384,7 +383,6 @@ a:hover{
 
 .ham-btn-color-2:hover{
   background: #FF5733;
-  padding: 20px 40px;
   color: #0D0D0D;
 }
 
@@ -489,38 +487,6 @@ a:hover{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* FONT */
    .poppins-light {
     font-family: "Poppins", serif;
@@ -546,3 +512,146 @@ a:hover{
     font-style: normal;
   }
   
+
+/* CONTACT */
+#contact {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 100px;
+  max-width: screen;
+  margin: 0 auto;
+}
+
+.contact-text-section {
+  max-width: 60%;
+}
+
+.contact-text-section h1 {
+  font-size: 2rem;
+  color: white;
+}
+
+.contact-text-section h1 span {
+  color: #FF5733;
+}
+
+.contact-text-section p {
+  width: 550px;
+  margin-top: 10px;
+  color: #CCCCCC;
+  line-height: 1.5;
+}
+
+.contact-form-section {
+  max-width: 30%;
+}
+
+.contact-form-section input {
+  font-family: "Poppins", serif;
+  font-weight: 500;
+  width: 350px;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #1E1E1E;
+  border: 1px solid #454545;
+  color: white;
+  border-radius: 0px;
+}
+
+.contact-form-section input::placeholder {
+  color: #CCCCCC;
+}
+
+.contact-form-section button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 30px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #ff5733;
+  background: #0D0D0D;
+  text-decoration: none;
+  border: 1px solid;
+  border-color: #ff5733;
+}
+
+.contact-form-section button:hover {
+  background-color: #FF5733;
+  color: #0D0D0D;
+}
+
+/* MOBILE CONTACT */
+#ham-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.ham-contact-text-section {
+  max-width: 80%;
+  margin-bottom: 30px;
+}
+
+.ham-contact-text-section h1 {
+  font-size: 1.5rem;
+  color: white;
+}
+
+.ham-contact-text-section h1 span {
+  color: #FF5733;
+}
+
+.ham-contact-text-section p {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #CCCCCC;
+  line-height: 1.5;
+}
+
+.ham-contact-form-section {
+  max-width: 30%;
+}
+
+.ham-contact-form-section input {
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  width: 100%;
+  max-width: 450px;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #1E1E1E;
+  border: 1px solid #454545;
+  color: white;
+  border-radius: 0px;
+}
+
+.ham-contact-form-section input::placeholder {
+  color: #CCCCCC;
+}
+
+.ham-contact-form-section button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 30px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #ff5733;
+  background: #0D0D0D;
+  text-decoration: none;
+  border: 1px solid;
+  border-color: #ff5733;
+  margin-top: 10px;
+}
+
+.ham-contact-form-section button:hover {
+  background-color: #FF5733;
+  color: #0D0D0D;
+}

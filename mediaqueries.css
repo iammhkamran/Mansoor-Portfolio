@@ -1,4 +1,4 @@
-@media screen and (max-width: 1200px){
+@media screen and (max-width: 950px){
     #desktop-nav{
         display:none;
     }
@@ -14,6 +14,16 @@
     }
 
     #ham-profile{
+        display:flex;
+    }
+}
+
+@media screen and (max-width: 950px){
+    #contact{
+        display:none;
+    }
+
+    #ham-contact{
         display:flex;
     }
 }
