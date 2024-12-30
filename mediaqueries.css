@@ -27,8 +27,29 @@
         display:flex;
     }
 }
+
 @media (max-width: 768px) {
     .projects-grid {
       grid-template-columns: repeat(2, 1fr);
     }
-  }
+}
+
+@media screen and (max-width: 950px){
+    #projects{
+        display:none;
+    }
+
+    #ham-projects{
+        display:flex;
+    }
+}
+
+/* @media screen and (max-width: 950px){
+    #about{
+        display:none;
+    }
+
+    #ham-about{
+        display:flex;
+    }
+} */
