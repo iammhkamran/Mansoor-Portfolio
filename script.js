@@ -10,17 +10,25 @@ function filterVideos(category) {
     const allButtons = document.querySelectorAll('.category-btn');
     allButtons.forEach(btn => btn.classList.remove('active'));
   
+    // Find the selected button using its dataset or onclick attribute
     const selectedButton = Array.from(allButtons).find(btn => 
-      btn.textContent.toLowerCase() === category
+        btn.getAttribute('onclick').includes(category)
     );
-    selectedButton.classList.add('active');
+    if (selectedButton) {
+        selectedButton.classList.add('active');
+    }
   
     const allCards = document.querySelectorAll('.project-card');
     allCards.forEach(card => {
-      if (card.dataset.category === category || category === 'all') {
-        card.style.display = 'block';
-      } else {
-        card.style.display = 'none';
-      }
+        if (card.dataset.category === category) {
+            card.style.display = 'block';
+        } else {
+            card.style.display = 'none';
+        }
     });
-  }
+}
+
+// Ensure only Blender videos are shown by default
+document.addEventListener('DOMContentLoaded', () => {
+    filterVideos('blender');
+});
