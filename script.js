@@ -32,3 +32,4 @@ function filterVideos(category) {
 document.addEventListener('DOMContentLoaded', () => {
     filterVideos('blender');
 });
+

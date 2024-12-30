@@ -601,14 +601,14 @@ a:hover{
   margin-bottom: 30px;
 }
 .ham-contact-text-section h1 {
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: white;
 }
 .ham-contact-text-section h1 span {
   color: #FF5733;
 }
 .ham-contact-text-section p {
-  margin-top: 10px;
+  margin-top: 16px;
   font-size: 1rem;
   color: #CCCCCC;
   line-height: 1.5;
@@ -736,46 +736,8 @@ a:hover{
 }
 
 /* MBOLIE PROJECTS */
-#ham-projects{
+#ham-projects-grid{
   display: none;
-}
-
-#ham-projects{
-  flex-direction: column;
-  padding-right: 100px;
-  padding-left: 100px;
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-
-.ham-section-title {
-  text-align: center;
-  font-size: 3rem;
-  font-weight: 600;
-  margin-bottom: 20px;
-}
-
-.ham-categories {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-  margin-bottom: 20px;
-}
-
-.ham-category-btn {
-  padding: 10px 24px;
-  background-color: transparent;
-  color: #ff5733;
-  border: 1px solid #ff5733;
-  cursor: pointer;
-  font-size: 18px;
-  transition: background-color 0.3s, color 0.3s;
-}
-
-.ham-category-btn:hover,
-.ham-category-btn.active {
-  background-color: #ff5733;
-  color: #121212;
 }
 
 .ham-projects-grid {
@@ -791,7 +753,7 @@ a:hover{
   border-radius: 0px;
 }
 
-.ham-project-card ham-iframe {
+.ham-project-card iframe {
   width: 100%;
   height: 300px;
   border: none;

@@ -29,11 +29,11 @@
 }
 
 @media screen and (max-width: 950px){
-    #projects{
+    #projects-grid{
         display:none;
     }
 
-    #ham-projects{
+    #ham-projects-grid{
         display:flex;
     }
 }
