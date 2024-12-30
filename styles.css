@@ -729,46 +729,4 @@ a:hover{
   line-height: 1.5;
 }
 
-@media (max-width: 768px) {
-  .projects-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
 
-/* MBOLIE PROJECTS */
-#ham-projects-grid{
-  display: none;
-}
-
-.ham-projects-grid {
-  display: flex;
-  flex-direction: column;
-  padding-top: 50px;
-  gap: 24px;
-}
-
-.ham-project-card {
-  background-color: #1e1e1e;
-  padding: 15px;
-  border-radius: 0px;
-}
-
-.ham-project-card iframe {
-  width: 250;
-  height: 200px;
-  border: none;
-  border-radius: 0px;
-}
-
-.ham-project-card h3 {
-  margin: 10px 0 5px;
-  font-size: 24px;
-  color: #ff5733;
-  margin-bottom: 10px;
-}
-
-.ham-project-card .ham-subtitle {
-  font-size: 16px;
-  color: #d3d3d3;
-  margin-bottom: 10px;
-}

@@ -27,13 +27,8 @@
         display:flex;
     }
 }
-
-@media screen and (max-width: 950px){
-    #projects-grid{
-        display:none;
+@media (max-width: 768px) {
+    .projects-grid {
+      grid-template-columns: repeat(2, 1fr);
     }
-
-    #ham-projects-grid{
-        display:flex;
-    }
-}
+  }
