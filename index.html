@@ -90,7 +90,7 @@
         </div>
 </section>
 
-    <section id="skills">
+<section id="skills">
         <div class="skills-container">
             <div class="skills-marquee">
             <img src="assets/skills (3).png" alt="Unreal Engine" class="skill-icon">
@@ -112,16 +112,88 @@
             <img src="assets/skills (5).png" alt="C++" class="skill-icon">
             </div>
         </div>
-    </section>
+</section>
 
-    <section id="about" class="about">
+<section id="about" class="about">
         <div class="aboutme">
             <h1>About Me</h1>
             <p>Technical Artist with four years of experience in both freelance and full-time roles. I have a knack for automation and specialize in creating geometry, materials, and textures using procedural techniques. Experienced in AR/VR projects, I am passionate about leveraging synthetic data and deep tech for innovative problem-solving in creative projects.</p>
         </div>
-    </section>
+</section>
 
-    <section id="contact">
+<section id="projects">
+    <h1 class="section-title">Projects</h1>
+    <div class="categories">
+      <button class="category-btn active" onclick="filterVideos('blender')">Blender</button>
+      <button class="category-btn" onclick="filterVideos('houdini')">Houdini</button>
+      <button class="category-btn" onclick="filterVideos('unreal')">Unreal Engine</button>
+      <button class="category-btn" onclick="filterVideos('misc')">MISC</button>
+    </div>
+    <div class="projects-grid" id="projects-grid">
+      <!-- Placeholder for Blender Videos -->
+      <div class="project-card" data-category="blender">
+        <iframe src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+        <h3>Timeless Elegance: A Timex Watch Showcase</h3>
+        <p class="subtitle">Subtitle: Explore the intricate craftsmanship and design details of this iconic timepiece</p>
+        <p>An ultra-realistic render of a Timex watch brought to life with precise lighting and animation techniques. Enhanced through post-processing and refined with video editing in Premiere Pro, this video captures every detail and movement to achieve a lifelike result.</p>
+      </div>
+      <div class="project-card" data-category="blender">
+        <iframe src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+        <h3>Sonic Visions: A Synthesizer Experience</h3>
+        <p class="subtitle">Delve into dynamic movements and realistic lighting that bring sound to life.</p>
+        <p>A visually engaging render of a synthesizer, showcasing realistic lighting and textures. The video experiments with dynamic camera and object movements to highlight intricate details and create a lifelike viewing experience.</p>
+      </div>
+      <div class="project-card" data-category="blender">
+        <iframe src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+        <h3>Stick With It: Wig Glue in Action</h3>
+        <p class="subtitle">A professional product animation designed for eCommerce success.</p>
+        <p>A product animation of a wig glue bottle created for an eCommerce client project. This video pairs smooth motion with precise sound sync, capturing attention with polished video editing for a professional and engaging presentation.</p>
+      </div>
+      <div class="project-card" data-category="blender">
+        <iframe src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+        <h3>Stylish Comfort: Hoodies in Motion</h3>
+        <p class="subtitle">Engaging eCommerce product animation that highlights fabric and features.</p>
+        <p>A sleek eCommerce product animation showcasing hoodies with smooth transitions and polished video editing, designed to highlight fabric textures and details for an engaging online shopping experience.</p>
+      </div>
+      <div class="project-card" data-category="blender">
+        <iframe src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+        <h3>Precision at Your Fingertips: The Macropad Animation</h3>
+        <p class="subtitle">Experience lifelike simulations and textures in a captivating display.</p>
+        <p>A detailed animation of a macropad, featuring realistic simulations, intricate texturing, and carefully crafted lighting to highlight every component and create an immersive, lifelike visual experience.</p>
+      </div>
+      <div class="project-card" data-category="blender">
+        <iframe src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+        <h3>Dark Descent: The Rise of the Evil Cyborg</h3>
+        <p class="subtitle">A thrilling animation that immerses you in a world of danger and intrigue.</p>
+        <p>A captivating animation featuring a menacing cyborg in a dark, immersive environment. This short film explores the cyborg's sinister presence, enhanced by dynamic movements and atmospheric details that emphasize its evil nature.</p>
+      </div>
+      <div class="project-card" data-category="blender">
+        <iframe src="https://www.youtube.com/watch?v=28Ytqv3wAk4&ab_channel=ysfxi" frameborder="0" allowfullscreen></iframe>
+        <h3>Gear Up: Sports Shirts Animation</h3>
+        <p class="subtitle">Promoting performance and style through dynamic visuals and lighting.</p>
+        <p>A promotional animation showcasing sports shirts, created for a client project. This video utilizes dynamic lighting and smooth animation to highlight the features and benefits of the shirts, engaging viewers and promoting the product effectively.</p>
+      <!-- Placeholder for hOUDINI Videos -->
+      <div class="project-card" data-category="houdini">
+        <iframe src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+        <h3>Timeless Elegance: A Timex Watch Showcase</h3>
+        <p class="subtitle">Subtitle: Explore the intricate craftsmanship and design details of this iconic timepiece</p>
+        <p>An ultra-realistic render of a Timex watch brought to life with precise lighting and animation techniques...</p>
+      </div>
+      <div class="project-card" data-category="houdini">
+        <iframe src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+        <h3>Timeless Elegance: A Timex Watch Showcase</h3>
+        <p class="subtitle">Subtitle: Explore the intricate craftsmanship and design details of this iconic timepiece</p>
+        <p>An ultra-realistic render of a Timex watch brought to life with precise lighting and animation techniques...</p>
+      </div>
+      <div class="project-card" data-category="houdini">
+        <iframe src="https://www.youtube.com/watch?v=28Ytqv3wAk4&ab_channel=ysfxi" frameborder="0" allowfullscreen></iframe>
+        <h3>Timeless Elegance: A Timex Watch Showcase</h3>
+        <p class="subtitle">Subtitle: Explore the intricate craftsmanship and design details of this iconic timepiece</p>
+        <p>An ultra-realistic render of a Timex watch brought to life with precise lighting and animation techniques...</p>
+      </div>
+    </div>
+</section>    
+<section id="contact">
         <div class="contact-text-section">
             <h1>Let's <span>Work</span> Together</h1>
             <p>I specialize in procedural design and AR/VR innovation. Let's create something extraordinary together.</p>
@@ -131,9 +203,9 @@
             <input type="email" placeholder="Email">
             <button type="submit">Submit</button>
         </div>
-    </section>
+</section>
 
-    <section id="ham-contact">
+<section id="ham-contact">
         <div class="ham-contact-text-section">
             <h1>Let's <span>Work</span> Together</h1>
             <p>I specialize in procedural design and AR/VR innovation. Let's create something extraordinary together.</p>
@@ -143,7 +215,8 @@
             <input type="email" placeholder="Email">
             <button type="submit">Submit</button>
         </div>
-    </section>
-    <script src="script.js"></script>
+</section>
+
+<script src="script.js"></script>
 </body>
 </html>
