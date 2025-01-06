@@ -316,18 +316,18 @@ a:hover{
   background: #FF5733;
   color: #0D0D0D;
 }
-.ham-btn-color-1:hover{
+/* .ham-btn-color-1:hover{
   background: none;
   color: #FF5733;
   border: #FF5733 1px solid;
-}
+} */
 .ham-btn-color-2{
   background: none;
 }
-.ham-btn-color-2:hover{
+/* .ham-btn-color-2:hover{
   background: #FF5733;
   color: #0D0D0D;
-}
+} */
 
 /* SKILLS */
 /* #skills {
