@@ -309,8 +309,9 @@ a:hover{
   border-radius: 100px;
 }
 .ham-btn-color-1:hover,
-.btn-color-2:hover {
-  cursor: pointer;
+.ham-btn-color-2:hover {
+  transform: scale(1.1); /* Slight zoom on hover */
+  opacity: 0.8; /* Reduce opacity slightly */
 }
 .ham-btn-color-1 {
   background: #FF5733;
@@ -368,6 +369,55 @@ a:hover{
   right: 0;
   background: linear-gradient(to right,transparent,#0D0D0D);
 }
+/* Responsive Styles for Mobile (width <= 900px) */
+@media screen and (max-width: 900px) {
+  .slider {
+    position: relative;
+    display: flex;
+    animation: 20s logo-slider-animation infinite linear;
+  }
+  .slider img{
+    height: 50px;
+    width: 50px;
+    margin: 0px 30px;
+    cursor: pointer;
+  }
+  .logo-slider{
+    padding: 24px 0px;
+    display: flex;
+    overflow: hidden;
+    background-color: #1E1E1E;
+    position: relative;
+  }
+  @keyframes logo-slider-animation {
+    from{
+      transform: translateX(0);
+    }
+    to{
+      transform: translateX(-100%);
+    }
+  }
+  .logo-slider:hover .slider{
+    animation-play-state: paused;
+  }
+  .logo-slider:before,
+  .logo-slider:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 50px;
+    height: 98px;
+    z-index: 1000;
+  }
+  .logo-slider:before{
+    left: 0;
+    background: linear-gradient(to left,transparent,#0D0D0D);
+  }
+  .logo-slider:after{
+    right: 0;
+    background: linear-gradient(to right,transparent,#0D0D0D);
+  }
+}
 
 /* ABOUT SECTION */
 .about {
@@ -403,6 +453,7 @@ a:hover{
     padding: 24px; 
     background-color: #0D0D0D; 
     color: #FFFFFF; 
+    margin-top: 30px;
   }
   .about h1 {
     font-size: 2rem;
@@ -441,129 +492,64 @@ a:hover{
   align-items: center;
   justify-content: space-between;
   padding: 100px;
-  max-width: screen;
-  margin-top: 150px;
+  /* max-width: screen; */
+  margin-top: 100px;
 }
-
 .Contact-Section {
   text-align: center;
   max-width: 600px;
 }
-
 .Contact-Section h1 {
   font-size: 3rem;
   margin: 0;
   color: white;
 }
-
 .Contact-Section h1 span {
   color: #FF5733;
 }
-
 .Contact-Section p {
-  width: 550px;
+  /* width: 350px; */
   margin: 10px 20px 20px;
   color: #CCCCCC;
   line-height: 1.5;
 }
-
 .contact-icons {
   display: flex;
   justify-content: center;
   gap: 20px;
 }
-
 .contact-icons a img {
   width: 32px; /* Set the size of icons */
   height: 32px;
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
-
 .contact-icons a img:hover {
   transform: scale(1.1); /* Slight zoom on hover */
   opacity: 0.8; /* Reduce opacity slightly */
 }
-
 /* Responsive Styles for Mobile (width <= 900px) */
 @media screen and (max-width: 900px) {
+  #contact {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-left: 24px;
+    margin-right: 24px;
+  }
   .Contact-Section h1 {
     font-size: 2rem;
   }
 
   .Contact-Section p {
+    width: 350px;
     font-size: 16px;
   }
 
   .contact-icons a img {
-    width: 24px; /* Smaller icon size */
-    height: 24px;
+    width: 30px; /* Smaller icon size */
+    height: 30px;
   }
-}
-
-/* MOBILE CONTACT */
-#ham-contact{
-  display: none;
-}
-#ham-contact {
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  max-width: 100%;
-  margin: 0 auto;
-  text-align: center;
-}
-.ham-contact-text-section {
-  max-width: 80%;
-  margin-bottom: 30px;
-}
-.ham-contact-text-section h1 {
-  font-size: 2rem;
-  color: white;
-}
-.ham-contact-text-section h1 span {
-  color: #FF5733;
-}
-.ham-contact-text-section p {
-  margin-top: 14px;
-  font-size: 14px;
-  color: #CCCCCC;
-  line-height: 1.5;
-}
-.ham-contact-form-section {
-  max-width: 50%;
-}
-.ham-contact-form-section input {
-  font-family: "Poppins", serif;
-  font-weight: 400;
-  width: 100%;
-  max-width: 450px;
-  padding: 10px;
-  margin-bottom: 10px;
-  background-color: #1E1E1E;
-  border: 1px solid #454545;
-  color: white;
-  border-radius: 0px;
-}
-.ham-contact-form-section input::placeholder {
-  color: #CCCCCC;
-}
-.ham-contact-form-section button {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 10px 20px;
-  font-size: 16px;
-  font-weight: 500;
-  color: #ff5733;
-  background: #0D0D0D;
-  text-decoration: none;
-  border: 1px solid;
-  border-color: #ff5733;
-  margin-top: 10px;
-}
-.ham-contact-form-section button:hover {
-  background-color: #FF5733;
-  color: #0D0D0D;
 }
 
 /* PROJECTS */
@@ -639,6 +625,7 @@ a:hover{
   display: none;
 }
 #ham-projects{
+  margin-top: 30px;
   flex-direction: column;
   padding: 24px;
 }
@@ -651,16 +638,16 @@ a:hover{
 .ham-categories {
   display: flex;
   justify-content: center;
-  gap: 10px;
+  /* gap: 10px; */
   margin-bottom: 10px;
 }
 .ham-category-btn {
-  padding: 0px 10px;
+  padding: 5px 20px;
   background-color: transparent;
   color: #ff5733;
   border: 1px solid #ff5733;
   cursor: pointer;
-  font-size: 14px;
+  font-size: 16px;
   transition: background-color 0.3s, color 0.3s;
 }
 .ham-category-btn.active {
