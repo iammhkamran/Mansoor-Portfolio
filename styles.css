@@ -444,56 +444,60 @@ a:hover{
   max-width: screen;
   margin-top: 150px;
 }
-.contact-text-section {
-  max-width: 60%;
+
+.Contact-Section {
+  text-align: center;
+  max-width: 600px;
 }
-.contact-text-section h1 {
+
+.Contact-Section h1 {
   font-size: 3rem;
+  margin: 0;
   color: white;
 }
-.contact-text-section h1 span {
+
+.Contact-Section h1 span {
   color: #FF5733;
 }
-.contact-text-section p {
+
+.Contact-Section p {
   width: 550px;
-  margin-top: 10px;
+  margin: 10px 20px 20px;
   color: #CCCCCC;
   line-height: 1.5;
 }
-.contact-form-section {
-  max-width: 40%;
-}
-.contact-form-section input {
-  font-family: "Poppins", serif;
-  font-weight: 500;
-  width: 400px;
-  padding: 10px;
-  margin-bottom: 10px;
-  background-color: #1E1E1E;
-  border: 1px solid #454545;
-  color: white;
-  border-radius: 0px;
-  display: block;
-}
-.contact-form-section input::placeholder {
-  color: #CCCCCC;
-}
-.contact-form-section button {
-  display: block;
-  align-items: center;
+
+.contact-icons {
+  display: flex;
   justify-content: center;
-  padding: 10px 30px;
-  font-size: 18px;
-  font-weight: 500;
-  color: #ff5733;
-  background: #0D0D0D;
-  text-decoration: none;
-  border: 1px solid;
-  border-color: #ff5733;
+  gap: 20px;
 }
-.contact-form-section button:hover {
-  background-color: #FF5733;
-  color: #0D0D0D;
+
+.contact-icons a img {
+  width: 32px; /* Set the size of icons */
+  height: 32px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.contact-icons a img:hover {
+  transform: scale(1.1); /* Slight zoom on hover */
+  opacity: 0.8; /* Reduce opacity slightly */
+}
+
+/* Responsive Styles for Mobile (width <= 900px) */
+@media screen and (max-width: 900px) {
+  .Contact-Section h1 {
+    font-size: 2rem;
+  }
+
+  .Contact-Section p {
+    font-size: 16px;
+  }
+
+  .contact-icons a img {
+    width: 24px; /* Smaller icon size */
+    height: 24px;
+  }
 }
 
 /* MOBILE CONTACT */
